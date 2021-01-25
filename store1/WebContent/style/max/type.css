@@ -1,0 +1,101 @@
+/*小页面改动*/
+
+#fix {
+    display: none;
+}
+
+
+/******      types             ****/
+
+#types {
+    display: block;
+    float: left;
+    position: fixed;
+    top: 3.5rem;
+    height: 100%;
+    background-color: rgb(231, 245, 255);
+}
+
+#types ul {
+    font-size: 1.5rem;
+    left: 0;
+}
+
+#types ul li a {
+    display: block;
+    text-align: center;
+    padding: .5rem 2rem;
+    margin-bottom: .1rem;
+    height: 2rem;
+    width: 5rem;
+    background-color: rgb(240, 255, 254);
+    text-decoration: none;
+    color: rgb(42, 55, 75);
+}
+
+#types a:hover {
+    background-color: rgb(145, 145, 145);
+}
+
+
+/*****        goods          ********/
+
+#goods {
+    position: relative;
+    top: 2rem;
+    left: 9rem;
+    width: 70%;
+    height: 50rem;
+    margin: 2rem 2rem 2rem 5rem;
+    padding: 1rem;
+    overflow: auto;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+
+/*           sections特效             */
+
+#types ul li a.selected {
+    background-color: rgb(239, 204, 255);
+}
+
+#goods section.hide {
+    display: none;
+}
+
+
+/*                    主页商品                 */
+
+#goods .good {
+    display: block;
+    position: relative;
+    float: left;
+    height: 10.6rem;
+    width: 8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: antiquewhite;
+    border: #423d40 .1rem solid;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: .5rem .5rem .5rem #dd98c3;
+}
+
+#goods .good:hover {
+    border-color: #e28181;
+    transform: scale(1.1);
+}
+
+#goods .good :active {
+    border-color: #7298c4;
+    transform: scale(.9);
+}
+
+.good img {
+    position: relative;
+    width: 100%;
+    height: 8rem;
+}

@@ -1,0 +1,27 @@
+#footer {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 40%;
+    background-color: rgb(109, 184, 228);
+    z-index: 100;
+}
+
+#footer img {
+    position: relative;
+    display: block;
+    float: left;
+    left: 4%;
+    height: 3rem;
+    width: auto;
+    margin-top: 1rem;
+}
+
+#footer div p {
+    position: relative;
+    font-size: .8rem;
+    display: block;
+    float: right;
+    right: 3%;
+    margin-top: 1rem;
+}

@@ -1,0 +1,211 @@
+h2 {
+    display: block;
+    position: relative;
+    margin: 5rem 5% 2% 35%;
+    font-size: 3rem;
+    color: rgb(148, 107, 107);
+}
+
+#title {
+    display: block;
+    margin: 0 10%;
+    width: 75%;
+    height: 3rem;
+    background-color: aquamarine;
+    border: .1rem solid #202020;
+    border-bottom: 0;
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+#title li {
+    display: inline;
+}
+
+#title li a {
+    display: inline-block;
+    padding-top: .5rem;
+    width: 20%;
+    height: 3rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    font-size: 1.5rem;
+    margin-left: 3%;
+}
+
+#title a:hover {
+    background-color: rgb(214, 207, 218);
+}
+
+
+/*表单区*/
+
+#lists section {
+    display: block;
+    position: relative;
+    height: 50rem;
+    width: 75%;
+    margin: 0 10% 5% 10%;
+    border-radius: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    /*自动换行且长度不够加滚动条*/
+    overflow: auto;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+#orders_form,
+#goods_form,
+#users_form {
+    background-color: rgb(199, 199, 199);
+}
+
+
+/*切换表单控制*/
+
+#title a.select {
+    background-color: rgb(199, 199, 199);
+}
+
+section.hide {
+    display: none !important;
+    background-color: #202020;
+}
+
+
+/*表单首行*/
+
+.tools {
+    position: relative;
+    display: block;
+    height: 3rem;
+    width: 100%;
+    border-bottom: #999595 solid .1rem;
+    margin-bottom: 1%;
+}
+
+.add_order img {
+    height: 100%;
+    width: auto;
+    margin-left: 3%;
+}
+
+a.add_order img:hover {
+    transform: scale(1.1);
+}
+
+.tools form {
+    display: inline-block;
+    position: relative;
+    top: -1.3rem;
+    padding-left: 10%;
+}
+
+.tools form input:first-child {
+    width: 10rem;
+    height: 2rem;
+    border: .1rem solid #333333;
+    border-radius: .5rem;
+    outline: none;
+}
+
+.tools form input:nth-child(2) {
+    width: 3rem;
+    height: 1.8rem;
+    border: .1rem solid #333333;
+    background-color: rgb(158, 87, 87);
+    border-radius: .5rem;
+    outline: none;
+}
+
+.tools form input:nth-child(2):hover {
+    transform: scale(1.1);
+    background-color: cadetblue;
+    float: initial;
+}
+
+
+/*表单头*/
+
+.list_table {
+    width: 100%;
+}
+
+.list_table thead th {
+    text-align: left;
+    width: 17%;
+    margin-left: 5%;
+    padding-bottom: 1rem;
+}
+
+
+/*表单体*/
+
+.list_table td {
+    text-align: left;
+    width: 17%;
+    padding-right: 1rem;
+    border-bottom: dashed .1rem #181717;
+    user-select: text;
+}
+
+
+/*修改键*/
+
+.update {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(156, 110, 199);
+    border: .1rem solid #333333;
+    border-radius: 1rem;
+}
+
+.update:hover {
+    background-color: rgb(199, 110, 154);
+    transform: scale(1.2);
+}
+
+
+/*商品页面修改键*/
+
+.good_m {
+    position: relative;
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: .1rem solid #333333;
+    font-size: 1.2rem;
+    border-radius: .75rem;
+    background-color: rgb(172, 184, 180);
+    text-align: center;
+    text-decoration: none;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.good_m:hover {
+    transform: scale(1.1)translate(-50%);
+    background-color: rgb(124, 155, 240);
+}
+
+.del_good {
+    position: relative;
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: .1rem solid #333333;
+    font-size: 1.2rem;
+    border-radius: .2rem;
+    background-color: rgb(241, 100, 100);
+    text-align: center;
+    text-decoration: none;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.del_good:hover {
+    transform: scale(1.1)translate(-50%);
+    background-color: rgb(255, 10, 10);
+}

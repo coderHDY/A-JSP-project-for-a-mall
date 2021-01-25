@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*全局字体*/
+
+@font-face {
+    font-family: katong;
+    src: url("../FZJZJW.TTF")
+}
+
+* {
+    font-family: katong;
+    box-sizing: border-box;
+}
+
+
+/*大的不显示*/
+
+#top {
+    display: none;
+}
+
+
+/*                    小屏主设置                        */
+
+#min-top {
+    z-index: 100000;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+
+#min-top nav {
+    background-color: rgb(190, 222, 248);
+    /* background-image: url(../../images/bar.jpg); */
+}
+
+#min-top nav ul {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 2% 0%;
+    box-sizing: border-box;
+}
+
+#min-top nav ul li {
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0% 0 0% 3%;
+    width: 15%;
+}
+
+#min-top nav ul li img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*js添加特效*/
+
+#min-top nav ul li.this {
+    background-color: rgb(30, 230, 230);
+}
+
+#min-top img {
+    width: 100%;
+    height: auto;
+}
+
+
+/***body***/
+
+body {
+    background-color: rgb(128, 195, 228);
+    user-select: none;
+}
+
+
+/***        container       **/
+
+#container {
+    display: block;
+    position: relative;
+    width: 100%;
+}

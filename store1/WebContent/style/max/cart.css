@@ -1,0 +1,138 @@
+#container {
+    top: 2rem;
+}
+
+
+/***/
+
+table {
+    position: relative;
+    margin: 5rem 5rem 2rem 5rem;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+caption {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+th {
+    font-size: 1.5rem;
+    border-bottom: .2rem indigo solid;
+    height: 3rem;
+}
+
+td {
+    font-size: 1.2rem;
+    height: 5rem;
+    width: 10rem;
+    border-bottom: .1rem dashed #00273d;
+}
+
+tr input {
+    font-size: 1.5rem;
+    background-color: inherit;
+    width: 10rem;
+}
+
+tr td:nth-child(3) input {
+    width: 4rem;
+}
+
+
+/*********        选中购买框        ********************/
+
+input+span {
+    display: block;
+    position: relative;
+    color: rgb(243, 87, 87);
+    font-size: 0rem;
+}
+
+input:checked+span {
+    font-size: 3rem;
+}
+
+
+/*购买按钮*/
+
+#buy {
+    height: 2rem;
+    width: 2rem;
+    border: .1rem solid #333333;
+    background-color: #fdb6b6;
+    border-radius: 1rem;
+    outline: none;
+}
+
+#buy:hover {
+    background-color: aqua;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+}
+
+#buy:active {
+    background-color: rgb(233, 42, 217);
+    height: 3.6rem;
+    width: 3.6rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+
+/*商品图片样式*/
+
+#goods_list img {
+    display: block;
+    position: relative;
+    height: 95%;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%);
+    border: .1rem solid #333333;
+    border-radius: .2rem;
+    overflow: hidden;
+    align-content: center;
+}
+
+
+/*点击图片变大特效*/
+
+#goods_list .checked {
+    position: absolute;
+    border: .1rem solid #e95fd7 !important;
+    border-radius: 1rem;
+    display: block;
+    top: 3rem;
+    height: 60%;
+    width: auto;
+    opacity: 1;
+}
+
+body.disable {
+    opacity: 0.9;
+    background-color: #414446;
+}
+
+
+/*清空购物车效果*/
+
+#clean {
+    font-size: 1.5rem;
+    line-height: 7.5rem;
+    margin-top: 10%;
+    position: relative;
+    left: 20%;
+    top: 10%;
+    width: 70%;
+    height: 20%;
+}
+
+#clean span {
+    color: red;
+    font-size: 7rem;
+}

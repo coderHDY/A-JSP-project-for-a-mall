@@ -1,0 +1,251 @@
+/*轮播图内部*/
+
+.slideBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.slideBox .hd {
+    height: 15px;
+    overflow: hidden;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+.slideBox .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+    list-style: none;
+}
+
+.slideBox .hd ul li {
+    float: left;
+    margin-right: 2px;
+    width: 15px;
+    height: 15px;
+    line-height: 14px;
+    text-align: center;
+    color: rgb(87, 87, 87);
+    cursor: pointer;
+}
+
+.slideBox .hd ul li.on {
+    color: #fff;
+}
+
+.slideBox .bd {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+
+.slideBox .bd li {
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.slideBox .bd img {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    width: auto;
+}
+
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+
+.slideBox .prev,
+.slideBox .next {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    width: 32px;
+    height: 40px;
+    background: url(images/slider-arrow.png) -110px 5px no-repeat;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.slideBox .next {
+    left: auto;
+    right: 3%;
+    background-position: 8px 5px;
+}
+
+.slideBox .prev:hover,
+.slideBox .next:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.slideBox .prevStop {
+    display: none;
+}
+
+.slideBox .nextStop {
+    display: none;
+}
+
+
+/*顶部滑动框*/
+
+#fix {
+    position: relative;
+    display: block;
+    top: 2rem;
+}
+
+
+/**/
+
+#top-two {
+    position: relative;
+    margin-top: 0rem;
+    height: 30rem;
+    width: 100%;
+}
+
+#top-three {
+    position: relative;
+    margin: 2rem 10%;
+    height: 90%;
+    border-radius: 2rem;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+
+/*搜索框*/
+
+#search-box {
+    display: block;
+    position: relative;
+    margin: 2rem 10% 0 10%;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 5rem;
+    border: .1rem;
+}
+
+#search-box img {
+    height: 100%;
+}
+
+#find {
+    display: block;
+    float: right;
+    margin: 1.5rem;
+}
+
+#find input:first-child {
+    height: 2rem;
+    width: 25rem;
+    padding-left: 1rem;
+    border: .1rem #333333 solid;
+    border-radius: 1rem;
+    outline: none;
+}
+
+#find input:nth-child(2) {
+    display: inline-block;
+    height: 2rem;
+    width: 4rem;
+    font-size: 1.2rem;
+    border: #333333 .1rem solid;
+    border-radius: 1rem;
+    background-color: rgb(237, 116, 100);
+    outline: none;
+}
+
+#find input:nth-child(2):hover {
+    transform: scale(1.1);
+}
+
+#find input:nth-child(2):active {
+    transform: scale(.9);
+}
+
+
+/***************       body       **************/
+
+#body-one {
+    /* background-image: url('../../images/max/h1.png');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% 10%;
+    background-clip: border-box; */
+    position: relative;
+    height: 100rem;
+    width: 80%;
+    background-color: rgba(185, 139, 206, 0.4);
+    margin: 0% 5% 5% 5%;
+    padding: 2% 5% 5% 5%;
+    overflow: auto;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+#body-head {
+    border-radius: 5rem 5rem 0 0;
+    margin: 5% 5% 0% 5%;
+    padding: 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 8rem;
+    overflow: hidden;
+}
+
+#body-head img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    width: auto;
+    height: 100%;
+}
+
+
+/*                    主页商品                 */
+
+#body-one .good {
+    display: block;
+    position: relative;
+    float: left;
+    height: 10.6rem;
+    width: 8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: antiquewhite;
+    border: #423d40 .1rem solid;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: .5rem .5rem .5rem #dd98c3;
+}
+
+#body-one .good:hover {
+    border-color: #e28181;
+    transform: scale(1.1);
+}
+
+#body-one .good :active {
+    border-color: #7298c4;
+    transform: scale(.9);
+}
+
+.good img {
+    position: relative;
+    width: 100%;
+    height: 8rem;
+}

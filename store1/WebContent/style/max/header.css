@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*全局字体*/
+
+@font-face {
+    font-family: katong;
+    src: url("../FZJZJW.TTF")
+}
+
+* {
+    font-family: "katong";
+}
+
+
+/*小的不显示*/
+
+#min-top {
+    display: none;
+}
+
+
+/***body***/
+
+body {
+    background-color: rgb(170, 248, 248);
+    user-select: none;
+}
+
+
+/**top**/
+
+#top nav {
+    z-index: 10;
+    background-image: url("../../images/bar.jpg");
+    position: fixed;
+    top: 0;
+    height: 3.5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+#top ul {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+#top ul li {
+    display: inline-block;
+}
+
+#top li a {
+    display: block;
+    float: left;
+    padding: 1rem 3rem 0.5rem 3rem;
+    font-size: 1.5rem;
+    height: 75%;
+}
+
+#top ul a.this {
+    pointer-events: none;
+}
+
+#top ul a.this:hover,
+#top ul a.this:link,
+#top ul a.this:active,
+#top ul a.this:visited {
+    background-color: rgb(101, 194, 194);
+    color: rgb(71, 53, 80);
+}
+
+#top ul a:link,
+#top ul a:visited {
+    color: rgb(0, 136, 255);
+    text-decoration: none;
+}
+
+#top ul a:hover {
+    background-color: aqua;
+    color: rgb(71, 53, 80);
+    text-decoration: none;
+}
+
+
+/*登录显示*/
+
+#is-login {
+    display: block;
+    position: absolute;
+    font-size: .8rem;
+    right: .2rem;
+    top: .5rem;
+}
+
+#is-login a:first-child {
+    display: inline-block;
+    font-size: 1rem !important;
+    color: rgb(243, 76, 104) !important;
+}
+
+#is-login a:nth-child(2) {
+    display: block;
+    font-size: .9rem !important;
+    color: rgb(100, 137, 172) !important;
+}
+
+#is-login a:hover {
+    color: blueviolet !important;
+    background-color: inherit !important;
+}
+
+#is-login a:active {
+    color: rgb(10, 6, 202) !important;
+    background-color: inherit !important;
+}
+
+
+/***        container       **/
+
+#container {
+    display: block;
+    position: relative;
+    width: 100%;
+}

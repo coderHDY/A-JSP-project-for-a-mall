@@ -1,0 +1,44 @@
+#orders {
+    position: relative;
+    display: block;
+    margin: 5rem 10% 10% 15%;
+    height: auto;
+    width: 60%;
+    background-color: aliceblue;
+    border: .1rem solid #333333;
+    border-radius: 2rem;
+    padding: 2rem;
+    overflow: auto;
+}
+
+#orders th,
+#orders td {
+    width: 50%;
+}
+
+caption {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+    margin-top: 3rem;
+    display: block;
+    text-align: center;
+    color: rgb(237, 100, 100);
+    margin-bottom: 3%;
+}
+
+.goMessage {
+    position: relative;
+    display: block;
+    height: 1.5rem;
+    width: 5rem;
+    background-color: rgb(142, 196, 241);
+    border: .1rem solid #333333;
+}
+
+.goMessage:hover {
+    background-color: blueviolet;
+    transform: scale(1.1);
+}
